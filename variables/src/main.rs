@@ -1,8 +1,16 @@
 fn main() {
-let mut  x=5;
-println!("value of x is {x}");
-x=6;
-println!("the value of x is {x}");
+    let   s1=String::from("i am here ");
+    let (s,len)=calculate_len(s1);
+    println!("values are {s} and {len}");
+
+
+
+}
+fn calculate_len(s:String)->(String ,usize){
+
+    let result=s.len();
+    (s,result)
+
 
 
 }
